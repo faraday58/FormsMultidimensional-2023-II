@@ -21,7 +21,37 @@ namespace FormsMultidimensional_2023_II
             //renglones[1]= {4,5,6};
             string[] columnas = renglones[0].Split(',');
 
+            Multidimensional m1 = new Multidimensional(renglones.Length, columnas.Length);
 
+            for(int i=0; i< m1.M; i++  )
+            {
+                columnas = renglones[i].Split(',');
+                for (int j=0; j < m1.N; j++)
+                {
+                    m1.A[i, j] =float.Parse (columnas[j]);
+                }
+            }
+
+            return m1;
+        }
+
+
+        public override string ToString()
+        {
+            //1 2 3
+            //4 5 6
+            string A = "";
+            for (int i = 0;  i < M; i++ )
+            {
+                for (int j=0; j < N; j++)
+                {
+                    A = A + " " + this.A[i, j].ToString();
+                }
+                A = A + "\n";
+            }
+            return A;
         }
     }
+
+
 }

@@ -201,6 +201,7 @@ namespace FormsMultidimensional_2023_II
             this.btnIntro.TabIndex = 3;
             this.btnIntro.Text = "In";
             this.btnIntro.UseVisualStyleBackColor = false;
+            this.btnIntro.Click += new System.EventHandler(this.btnIntro_Click);
             // 
             // Form1
             // 
