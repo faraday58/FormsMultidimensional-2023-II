@@ -14,6 +14,8 @@ namespace FormsMultidimensional_2023_II
     {
 
         Multidimensional m1;
+        Multidimensional m2;
+        Multidimensional m3;
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +25,15 @@ namespace FormsMultidimensional_2023_II
         {
             m1 = Multidimensional.Leer(txtbDisplay.Text);
             lbMatriz1.Text = m1.ToString();
+        }
+
+        private void btnSuma_Click(object sender, EventArgs e)
+        {
+            m2 = Multidimensional.Leer(txtbDisplay.Text);
+            lbMatriz2.Text = m2.ToString();
+            m3 = m1 + m2;
+            lbResultado.Text = m3.ToString();
+
         }
     }
 }

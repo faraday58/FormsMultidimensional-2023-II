@@ -11,7 +11,7 @@ namespace FormsMultidimensional_2023_II
             get => m;
             set {
 
-                if(m >0   )
+                if(value >0   )
                 {
                     m = value;
                 }
@@ -26,7 +26,7 @@ namespace FormsMultidimensional_2023_II
             get => n;
             set
             {
-                if( n > 0)
+                if( value > 0)
                 {
                     n = value;
                 }

@@ -35,6 +35,22 @@ namespace FormsMultidimensional_2023_II
             return m1;
         }
 
+        public static Multidimensional operator +(Multidimensional m1, Multidimensional m2 )
+        {
+            Multidimensional m3 = new Multidimensional(m2.M, m2.N);
+
+            for( int i=0; i< m1.M; i++  )
+            {
+                for (int j = 0; j < m1.N; j++ )
+                {
+                    m3.A[i, j] = m1.A[i, j] + m2.A[i, j];
+                }
+            }
+
+            return m3;
+        }
+
+
 
         public override string ToString()
         {

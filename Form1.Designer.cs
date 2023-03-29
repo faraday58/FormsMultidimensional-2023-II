@@ -105,28 +105,25 @@ namespace FormsMultidimensional_2023_II
             // 
             // lbMatriz1
             // 
-            this.lbMatriz1.AutoSize = true;
-            this.lbMatriz1.Location = new System.Drawing.Point(69, 149);
+            this.lbMatriz1.Location = new System.Drawing.Point(66, 149);
             this.lbMatriz1.Name = "lbMatriz1";
-            this.lbMatriz1.Size = new System.Drawing.Size(35, 13);
+            this.lbMatriz1.Size = new System.Drawing.Size(92, 70);
             this.lbMatriz1.TabIndex = 2;
-            this.lbMatriz1.Text = "label1";
+            this.lbMatriz1.Text = "1 2";
             // 
             // lbMatriz2
             // 
-            this.lbMatriz2.AutoSize = true;
             this.lbMatriz2.Location = new System.Drawing.Point(198, 149);
             this.lbMatriz2.Name = "lbMatriz2";
-            this.lbMatriz2.Size = new System.Drawing.Size(35, 13);
+            this.lbMatriz2.Size = new System.Drawing.Size(87, 70);
             this.lbMatriz2.TabIndex = 2;
             this.lbMatriz2.Text = "label1";
             // 
             // lbResultado
             // 
-            this.lbResultado.AutoSize = true;
             this.lbResultado.Location = new System.Drawing.Point(349, 149);
             this.lbResultado.Name = "lbResultado";
-            this.lbResultado.Size = new System.Drawing.Size(35, 13);
+            this.lbResultado.Size = new System.Drawing.Size(88, 70);
             this.lbResultado.TabIndex = 2;
             this.lbResultado.Text = "label1";
             // 
@@ -139,6 +136,7 @@ namespace FormsMultidimensional_2023_II
             this.btnSuma.TabIndex = 3;
             this.btnSuma.Text = "+";
             this.btnSuma.UseVisualStyleBackColor = true;
+            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
             // 
             // btnResta
             // 
