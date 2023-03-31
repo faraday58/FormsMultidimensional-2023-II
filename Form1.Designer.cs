@@ -167,6 +167,7 @@ namespace FormsMultidimensional_2023_II
             this.btnSeno.TabIndex = 3;
             this.btnSeno.Text = "Sen";
             this.btnSeno.UseVisualStyleBackColor = true;
+            this.btnSeno.Click += new System.EventHandler(this.btnSeno_Click);
             // 
             // btnTrans
             // 

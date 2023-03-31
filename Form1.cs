@@ -35,5 +35,17 @@ namespace FormsMultidimensional_2023_II
             lbResultado.Text = m3.ToString();
 
         }
+
+        private void btnSeno_Click(object sender, EventArgs e)
+        {
+            if(rdbDeg.Checked)
+            {
+                MessageBox.Show("Estás en Grados Hexadecimales");
+            }
+            if(rdbRad.Checked)
+            {
+                MessageBox.Show(Math.Sin(3.1416).ToString());
+            }
+        }
     }
 }
